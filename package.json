@@ -1,0 +1,31 @@
+{
+  "name": "check-npm-version",
+  "version": "1.0.0",
+  "description": "这是一个检查自己项目npm版本号的包",
+  "main": "index.ts",
+  "bin": {
+    "check_version": "dist/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "exports": {
+    "require": "./dist/xxx.cjs",
+    "import": "./dist/xxx.mjs",
+    "default": "./dist/xxx.js"
+  },
+  "devDependencies": {
+    "@types/command-exists": "^1.2.3",
+    "vite": "^5.4.0",
+    "vite-plugin-externalize-deps": "^0.8.0"
+  },
+  "dependencies": {
+    "@types/node": "^22.2.0",
+    "command-exists": "^1.2.9",
+    "typescript": "^5.5.4"
+  }
+}
